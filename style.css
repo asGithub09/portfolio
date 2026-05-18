@@ -1,0 +1,442 @@
+/* ================= GOOGLE FONT ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fa;
+
+    color:#222;
+
+    overflow-x:hidden;
+
+    padding-top:80px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    background:rgba(15,32,39,0.95) !important;
+
+    backdrop-filter:blur(10px);
+
+    padding:18px 0;
+
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+.navbar-brand{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#ffc107 !important;
+
+    letter-spacing:1px;
+
+    transition:0.3s;
+}
+
+.navbar-brand:hover{
+
+    transform:scale(1.05);
+}
+
+.nav-link{
+
+    color:white !important;
+
+    font-size:17px;
+
+    margin-left:18px;
+
+    transition:0.3s;
+
+    position:relative;
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0%;
+
+    height:2px;
+
+    background:#ffc107;
+
+    transition:0.3s;
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+}
+
+.nav-link:hover{
+
+    color:#ffc107 !important;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero-section{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.7)),
+    linear-gradient(to right,#0f2027,#203a43,#2c5364);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+}
+
+/* ================= HERO TEXT ================= */
+
+#mainTitle{
+
+    font-size:75px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
+}
+
+#subTitle{
+
+    font-size:40px;
+
+    color:#ffc107;
+
+    margin-bottom:30px;
+
+    font-weight:600;
+}
+
+#description{
+
+    font-size:22px;
+
+    max-width:950px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#e2e2e2;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-warning{
+
+    background:#ffc107;
+
+    border:none;
+
+    color:black;
+
+    font-weight:600;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 20px rgba(255,193,7,0.3);
+}
+
+.btn-warning:hover{
+
+    transform:translateY(-5px);
+
+    background:white;
+
+    color:black;
+
+    box-shadow:0 12px 25px rgba(255,193,7,0.4);
+}
+
+/* ================= SECTION TITLES ================= */
+
+section h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#0f2027;
+
+    position:relative;
+
+    margin-bottom:60px;
+}
+
+section h2::after{
+
+    content:"";
+
+    width:80px;
+
+    height:4px;
+
+    background:#ffc107;
+
+    position:absolute;
+
+    bottom:-15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+}
+
+/* ================= ABOUT SECTION ================= */
+
+#about{
+
+    background:white;
+}
+
+#about img{
+
+    border-radius:20px;
+
+    transition:0.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+#about img:hover{
+
+    transform:scale(1.03);
+}
+
+#about p{
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#555;
+}
+
+/* ================= SKILLS SECTION ================= */
+
+#skills{
+
+    background:#f8f9fc;
+}
+
+.skill-card{
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:20px;
+
+    height:100%;
+
+    transition:0.4s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    border:1px solid transparent;
+}
+
+.skill-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#ffc107;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.skill-card h4{
+
+    color:#0d6efd;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+}
+
+.skill-card p{
+
+    color:#555;
+
+    line-height:1.7;
+}
+
+/* ================= EXPERIENCE SECTION ================= */
+
+#experience{
+
+    background:white;
+}
+
+.experience-box{
+
+    background:linear-gradient(to right,#ffffff,#f5f7fa);
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+
+    border-left:8px solid #ffc107;
+}
+
+.experience-box h3{
+
+    color:#0f2027;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.experience-box p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#555;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+#contact{
+
+    background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+
+    color:white;
+}
+
+.contact-text{
+
+    font-size:20px;
+
+    margin-bottom:20px;
+}
+
+.contact-link{
+
+    color:#ffc107;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.contact-link:hover{
+
+    color:white;
+
+    text-decoration:underline;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+
+    background:#0a0a0a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:16px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    #mainTitle{
+
+        font-size:55px;
+    }
+
+    #subTitle{
+
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    #mainTitle{
+
+        font-size:40px;
+    }
+
+    #subTitle{
+
+        font-size:24px;
+    }
+
+    #description{
+
+        font-size:17px;
+    }
+
+    .navbar-brand{
+
+        font-size:24px;
+    }
+
+    section h2{
+
+        font-size:32px;
+    }
+
+    .experience-box{
+
+        padding:30px;
+    }
+
+}
